@@ -1,0 +1,24 @@
+{
+  "display_information": {
+    "name": "Cocoliso",
+    "description": "Anota tareas, eventos y recordatorios de forHuman en el dashboard",
+    "background_color": "#1a1a1a"
+  },
+  "features": {
+    "bot_user": { "display_name": "cocoliso", "always_online": true }
+  },
+  "oauth_config": {
+    "scopes": {
+      "bot": ["app_mentions:read", "chat:write", "channels:history", "users:read", "users:read.email"]
+    }
+  },
+  "settings": {
+    "event_subscriptions": {
+      "request_url": "https://REEMPLAZA-CON-LA-URL-DEL-AGENTE/eve/v1/slack",
+      "bot_events": ["app_mention", "message.channels"]
+    },
+    "org_deploy_enabled": false,
+    "socket_mode_enabled": false,
+    "token_rotation_enabled": false
+  }
+}
