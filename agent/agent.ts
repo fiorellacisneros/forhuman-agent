@@ -1,6 +1,5 @@
 import { defineAgent } from "eve";
 
 export default defineAgent({
-  model: "google/gemini-3.8-flash",
-  reasoning: "high",
+  model: "recursive/flint-v1.0",
 });
